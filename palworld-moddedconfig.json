@@ -898,5 +898,221 @@
         "DefaultValue":"",
         "Placeholder":"GE-Proton8-25",
         "EnumValues":{}
+    },
+    {
+        "DisplayName":"LAN Server Max Tick Rate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets maximum ticks per second for LAN servers, higher rates result in smoother gameplay.",
+        "Keywords":"tick,rate,lan,network,local,unreal,engine",
+        "FieldName":"LanMaxTickRate",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"LanMaxTickRate",
+        "DefaultValue":"",
+        "Placeholder":"30",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Net Server Max Tick Rate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets maximum ticks per second for Internet servers, higher rates result in smoother gameplay.",
+        "Keywords":"tick,rate,net,network,internet,unreal,engine",
+        "FieldName":"NetMaxTickRate",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"NetMaxTickRate",
+        "DefaultValue":"",
+        "Placeholder":"30",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Configured LAN Speed",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the LAN speed, ensuring LAN players can utilize maximum network capacity.",
+        "Keywords":"speed,lan,network,local,unreal,engine",
+        "FieldName":"LanSpeed",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"LanSpeed",
+        "DefaultValue":"",
+        "Placeholder":"104857600",
+        "Suffix": "Bps",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Configured Net Speed",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the assumed player internet speed in bytes per second. High value reduces chances of bandwidth throttling.",
+        "Keywords":"speed,net,network,internet,unreal,engine",
+        "FieldName":"NetSpeed",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"NetSpeed",
+        "DefaultValue":"",
+        "Placeholder":"104857600",
+        "Suffix": "Bps",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Maximum Client Rate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Maximum data transfer rate per client for all connections, set to a high value to prevent data capping.",
+        "Keywords":"rate,client,network,unreal,engine",
+        "FieldName":"MaxClientRate",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MaxClientRate",
+        "DefaultValue":"",
+        "Placeholder":"104857600",
+        "Suffix": "Bps",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Maximum Internet Rate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Specifically targets internet clients, allowing for high-volume data transfer without restrictions.",
+        "Keywords":"rate,internet,network,unreal,engine",
+        "FieldName":"MaxInternetRate",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"MaxInternetRate",
+        "DefaultValue":"",
+        "Placeholder":"104857600",
+        "Suffix": "Bps",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Threaded Rendering",
+        "Category":"Palworld Engine Settings",
+        "Description":"Enable multi-threaded operations for rendering calculations.",
+        "Keywords":"multithread,rendering,unreal,engine",
+        "FieldName":"ThreadedRendering",
+        "InputType":"checkbox",
+        "ParamFieldName":"ThreadedRendering",
+        "DefaultValue":"false",
+        "EnumValues":{
+            "False":"false",
+            "True":"true"
+        }
+    },
+    {
+        "DisplayName":"Threaded Physics",
+        "Category":"Palworld Engine Settings",
+        "Description":"Enable multi-threaded operations for physics calculations.",
+        "Keywords":"multithread,physics,unreal,engine",
+        "FieldName":"ThreadedPhysics",
+        "InputType":"checkbox",
+        "ParamFieldName":"ThreadedPhysics",
+        "DefaultValue":"false",
+        "EnumValues":{
+            "False":"false",
+            "True":"true"
+        }
+    },
+    {
+        "DisplayName":"Framerate Smoothing",
+        "Category":"Palworld Engine Settings",
+        "Description":"Enables the game engine to smooth out frame rate fluctuations for a more consistent visual experience",
+        "Keywords":"frame,rate,smoothing,bsmoothframerate,unreal,engine",
+        "FieldName":"SmoothFramerate",
+        "InputType":"checkbox",
+        "ParamFieldName":"SmoothFramerate",
+        "DefaultValue":"true",
+        "EnumValues":{
+            "False":"false",
+            "True":"true"
+        }
+    },
+    {
+        "DisplayName":"Smoothed Framerate Lower Bound",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the lower bound for the Framerate Smoothing option.",
+        "Keywords":"frame,rate,smoothing,bsmoothframerate,unreal,engine",
+        "FieldName":"SmoothFramerateLower",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"SmoothFramerateLower",
+        "DefaultValue":"30",
+        "Placeholder":"30",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Smoothed Framerate Upper Bound",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the upper bound for the Framerate Smoothing option.",
+        "Keywords":"frame,rate,smoothing,bsmoothframerate,unreal,engine",
+        "FieldName":"SmoothFramerateUpper",
+        "InputType":"number",
+        "MinValue":"0",
+        "ParamFieldName":"SmoothFramerateUpper",
+        "DefaultValue":"120",
+        "Placeholder":"120",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Fixed Framerate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Disables the use of a fixed frame rate, allowing the game to dynamically adjust frame rate for optimal performance",
+        "Keywords":"frame,rate,fixed,busefixedframerate,unreal,engine",
+        "FieldName":"FixedFramerate",
+        "InputType":"checkbox",
+        "ParamFieldName":"FixedFramerate",
+        "DefaultValue":"false",
+        "EnumValues":{
+            "False":"false",
+            "True":"true"
+        }
+    },
+    {
+        "DisplayName":"Minimum Desired Framerate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Specifies a minimum acceptable frame rate, ensuring the game runs smoothly at least at this frame rate.",
+        "Keywords":"frame,rate,unreal,engine",
+        "FieldName":"MinimumFramerate",
+        "InputType":"number",
+        "MinValue":"0.000000",
+        "ParamFieldName":"MinimumFramerate",
+        "DefaultValue":"60.000000",
+        "Placeholder":"60.000000",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Fixed Framerate",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the fixed framerate. Not used if Fixed Framerate is disabled.",
+        "Keywords":"frame,rate,fixed,unreal,engine",
+        "FieldName":"FixedFramerateValue",
+        "InputType":"number",
+        "MinValue":"0.000000",
+        "ParamFieldName":"FixedFramerateValue",
+        "DefaultValue":"",
+        "Placeholder":"60.000000",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Net Client Ticks Per Second",
+        "Category":"Palworld Engine Settings",
+        "Description":"Increases the update frequency for clients, enhancing responsiveness and reducing lag.",
+        "Keywords":"tps,tick,unreal,engine",
+        "FieldName":"NetClientTps",
+        "InputType":"number",
+        "MinValue":"0.000000",
+        "ParamFieldName":"NetClientTps",
+        "DefaultValue":"60.000000",
+        "Placeholder":"60.000000",
+        "EnumValues":{}
+    },
+    {
+        "DisplayName":"Time Between Purging Pending Kill Objects",
+        "Category":"Palworld Engine Settings",
+        "Description":"Sets the time interval, in seconds, at which the engine will attempt to purge objects that are pending deletion.",
+        "Keywords":"garbage,collection,purge,unreal,engine",
+        "FieldName":"PurgePendingObjects",
+        "InputType":"number",
+        "MinValue":"0.000000",
+        "ParamFieldName":"PurgePendingObjects",
+        "DefaultValue":"120.000000",
+        "Placeholder":"120.000000",
+        "EnumValues":{}
     }
 ]
